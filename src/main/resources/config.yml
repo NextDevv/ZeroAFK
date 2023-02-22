@@ -1,0 +1,31 @@
+prefix: "&a[ZeroAFK]&f"
+color-prefix: "&a"
+
+afk-options:
+  active: true
+  max-afk-time: 20 # Secondi
+  # Il server hub deve essere per forza REGISTRATO dentro il config di bungee
+  hub-server-name: hub
+  notify-server: true
+  notify-staff: true
+  # Log into logs file the event
+  log: true
+
+database: # Bisogna avere le credenziali del database se vuoi che il plugin funzioni
+  host: localhost
+  port: 5432
+  user: root
+  password: ""
+  database: "ZeroAFK"
+
+commands:
+  afk: # Non disponibile per il momento  ;(
+    name: afk
+    description: Vai a afk
+    usage: /afk
+    extended-help: null
+    hidden: false
+    required-op: false
+
+debug:
+  world-afk: world_nether

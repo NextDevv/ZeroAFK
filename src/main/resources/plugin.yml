@@ -1,0 +1,19 @@
+name: Zeroafk
+version: '${project.version}'
+main: zeromc.next.plugins.zeroafk.Zeroafk
+api-version: 1.19
+load: STARTUP
+authors: [ Next ]
+depend: [PlaceholderAPI]
+permissions:
+  zeroafk.bypass:
+    default: op
+    description: Bypasses the anti afk
+  zeroafk.notify:
+    description: Notify when a players go away from keyboard
+    default: op
+commands:
+  debug:
+    usage: /<command>
+  afk:
+    usage: /<command>
